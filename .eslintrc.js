@@ -28,15 +28,16 @@ module.exports = {
             'warn',
             {
                 tabWidth: 4,
-                printWidth: 120,
+                printWidth: 80,
                 trailingComma: 'es5',
-                semi: true,
+                semi: false,
                 singleQuote: true,
                 endOfLine: 'auto',
+                arrowParens: 'always',
                 bracketSpacing: true,
                 jsxBracketSameLine: true,
             },
         ],
     },
     plugins: ['simple-import-sort'],
-};
+}
