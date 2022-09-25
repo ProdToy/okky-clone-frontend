@@ -7,7 +7,6 @@ import {
 } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import type { AppProps } from 'next/app'
-import Head from 'next/head'
 import { RecoilRoot } from 'recoil'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -21,9 +20,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     })
     return (
         <>
-            <Head>
-                <title>OKKY - All that developer</title>
-            </Head>
             <QueryClientProvider client={queryClient}>
                 <Hydrate state={pageProps.dehydratedState}>
                     <RecoilRoot>
