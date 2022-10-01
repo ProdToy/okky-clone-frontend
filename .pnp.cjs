@@ -45,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:5.36.2"],\
             ["@typescript-eslint/parser", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:5.36.2"],\
             ["@yarnpkg/plugin-typescript", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:4.0.0-rc.18"],\
+            ["babel-plugin-styled-components", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:2.0.7"],\
             ["eslint", "npm:8.23.0"],\
             ["eslint-config-next", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:12.2.5"],\
             ["eslint-config-prettier", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:8.5.0"],\
@@ -55,6 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:18.2.0"],\
+            ["react-is", "npm:18.2.0"],\
             ["recoil", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:0.7.5"],\
             ["styled-components", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:5.3.5"],\
             ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"]\
@@ -1773,6 +1775,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-annotate-as-pure", "npm:7.18.6"],\
             ["@babel/helper-module-imports", "npm:7.18.6"],\
             ["@types/styled-components", null],\
+            ["babel-plugin-syntax-jsx", "npm:6.18.0"],\
+            ["lodash", "npm:4.17.21"],\
+            ["picomatch", "npm:2.3.1"],\
+            ["styled-components", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:5.3.5"]\
+          ],\
+          "packagePeers": [\
+            "@types/styled-components",\
+            "styled-components"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:2.0.7", {\
+          "packageLocation": "./.yarn/__virtual__/babel-plugin-styled-components-virtual-e92850df91/0/cache/babel-plugin-styled-components-npm-2.0.7-543710bd48-80b06b10db.zip/node_modules/babel-plugin-styled-components/",\
+          "packageDependencies": [\
+            ["babel-plugin-styled-components", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:2.0.7"],\
+            ["@babel/helper-annotate-as-pure", "npm:7.18.6"],\
+            ["@babel/helper-module-imports", "npm:7.18.6"],\
+            ["@types/styled-components", "npm:5.1.26"],\
             ["babel-plugin-syntax-jsx", "npm:6.18.0"],\
             ["lodash", "npm:4.17.21"],\
             ["picomatch", "npm:2.3.1"],\
@@ -3723,6 +3743,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:5.36.2"],\
             ["@typescript-eslint/parser", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:5.36.2"],\
             ["@yarnpkg/plugin-typescript", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:4.0.0-rc.18"],\
+            ["babel-plugin-styled-components", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:2.0.7"],\
             ["eslint", "npm:8.23.0"],\
             ["eslint-config-next", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:12.2.5"],\
             ["eslint-config-prettier", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:8.5.0"],\
@@ -3733,6 +3754,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:18.2.0"],\
+            ["react-is", "npm:18.2.0"],\
             ["recoil", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:0.7.5"],\
             ["styled-components", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:5.3.5"],\
             ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"]\
@@ -4357,7 +4379,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hoist-non-react-statics", "npm:3.3.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:3b15953a557516b00bc6fcbcb826f1261aeecc1b4b052f55d817920d40bc518da6fe930906f7c541bc8f4a7b6838472045ab5e10dd31d8a17ec9c6c4982d28ef#npm:18.2.0"],\
-            ["react-is", null],\
+            ["react-is", "npm:18.2.0"],\
             ["shallowequal", "npm:1.1.0"],\
             ["supports-color", "npm:5.5.0"]\
           ],\
