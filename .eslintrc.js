@@ -17,12 +17,8 @@ module.exports = {
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-        '@typescript-eslint/no-non-null-assertion': 'off',
-        'no-unused-vars': 'warn',
         'simple-import-sort/imports': 'warn',
         'simple-import-sort/exports': 'warn',
-        'sort-imports': 'off',
-        'import/order': 'off',
         'react/react-in-jsx-scope': 'off',
         'prettier/prettier': [
             'warn',
