@@ -35,6 +35,8 @@
   --action-active: #fff;
   --action-hover: rgba(255, 255, 255, 0.08);
   --action-disabled: rgba(255,255,255,0.3);
+
+  --border-color: #e5ddeb;
   
   --background-default: #121212;
 

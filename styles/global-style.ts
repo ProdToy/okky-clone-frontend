@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *, *::before, *::after {
-    font-family: -apple-system, 'Material Icons', sans-serif;
+    font-family: 'Pretendard', 'Material Icons', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
