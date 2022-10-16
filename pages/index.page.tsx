@@ -1,4 +1,4 @@
-import { HomeWrapper } from './src/home.style'
+import { HomeWrapper } from './style'
 
 const Home = () => {
     return <HomeWrapper>OKKY Main Page</HomeWrapper>
