@@ -6,11 +6,24 @@ import {
     QueryClientProvider,
 } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { ReactElement, ReactNode } from 'react'
 import { RecoilRoot } from 'recoil'
+import { GlobalStyle } from 'styles/global-style'
 
-function MyApp({ Component, pageProps }: AppProps) {
+import App from '~/layout/app'
+
+type NextPageWithLayout = NextPage & {
+    getLayout?: (page: ReactElement) => ReactNode
+}
+
+type AppPropsWithLayout = AppProps & {
+    Component: NextPageWithLayout
+}
+
+function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     const queryClient = new QueryClient({
         defaultOptions: {
             queries: {
@@ -19,6 +32,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             },
         },
     })
+
+    const getLayout = Component.getLayout ?? ((page) => <App>{page}</App>)
+
     return (
         <>
             <Head>
@@ -27,7 +43,8 @@ function MyApp({ Component, pageProps }: AppProps) {
             <QueryClientProvider client={queryClient}>
                 <Hydrate state={pageProps.dehydratedState}>
                     <RecoilRoot>
-                        <Component {...pageProps} />
+                        <GlobalStyle />
+                        {getLayout(<Component {...pageProps} />)}
                     </RecoilRoot>
                 </Hydrate>
                 <ReactQueryDevtools initialIsOpen={false} />
