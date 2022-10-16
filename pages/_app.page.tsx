@@ -9,11 +9,9 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { ReactElement, ReactNode } from 'react'
+import App from 'pages/src/app'
+import { ReactElement, ReactNode, useRef } from 'react'
 import { RecoilRoot } from 'recoil'
-import { GlobalStyle } from 'styles/global-style'
-
-import App from '~/layout/app'
 
 type NextPageWithLayout = NextPage & {
     getLayout?: (page: ReactElement) => ReactNode
@@ -24,14 +22,16 @@ type AppPropsWithLayout = AppProps & {
 }
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
-    const queryClient = new QueryClient({
-        defaultOptions: {
-            queries: {
-                refetchOnWindowFocus: false,
-                retry: 3,
+    const queryClientRef = useRef<QueryClient>()
+    if (!queryClientRef.current) {
+        queryClientRef.current = new QueryClient({
+            defaultOptions: {
+                queries: {
+                    refetchOnWindowFocus: false,
+                },
             },
-        },
-    })
+        })
+    }
 
     const getLayout = Component.getLayout ?? ((page) => <App>{page}</App>)
 
@@ -40,14 +40,13 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
             <Head>
                 <title>OKKY - All that developer</title>
             </Head>
-            <QueryClientProvider client={queryClient}>
+            <QueryClientProvider client={queryClientRef.current}>
                 <Hydrate state={pageProps.dehydratedState}>
                     <RecoilRoot>
-                        <GlobalStyle />
                         {getLayout(<Component {...pageProps} />)}
                     </RecoilRoot>
+                    <ReactQueryDevtools initialIsOpen={false} />
                 </Hydrate>
-                <ReactQueryDevtools initialIsOpen={false} />
             </QueryClientProvider>
         </>
     )

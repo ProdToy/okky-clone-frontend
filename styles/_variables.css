@@ -5,7 +5,7 @@
   --black: #000000;
 
   --primary-light: #e3f2fd;
-  --primary-main: #0b7fd3;
+  --primary-main: #0090f9;
   --primary-dark: #135686;
 
   --secondary-light: #f3e5f5;
@@ -31,6 +31,7 @@
   --text-primary: #fff;
   --text-secondary: rgba(255, 255, 255, 0.7);
   --text-disabled: rgba(255, 255, 255, 0.5);
+  --text-hover: #686868;
 
   --action-active: #fff;
   --action-hover: rgba(255, 255, 255, 0.08);
@@ -40,7 +41,7 @@
   
   --background-default: #121212;
 
-  --divider-main: rgba(255,255,255,0.12);
+  --divider-main: #bbbbbb;
 
   --text-xl-size: 1.25rem;
   --text-xl-line-height: 1.875rem;
@@ -49,7 +50,7 @@
   --text-md-size: 1rem;
   --text-md-line-height: 1.5rem;
   --text-sm-size: 0.875rem;
-  --text-sm-line-height: 1.125rem;
+  --text-sm-line-height: 1.25rem;
   --text-xs-size: 0.75rem;
   --text-xs-line-height: 1.125rem;
 

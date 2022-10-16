@@ -19,9 +19,8 @@ export default class MyDocument extends Document {
                     <link rel="icon" href="/favicon.ico" />
                     <link
                         rel="stylesheet"
-                        as="style"
-                        crossOrigin="anonymous"
-                        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+                        type="text/css"
+                        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
                     />
                 </Head>
                 <body>
