@@ -36,6 +36,11 @@ const CommonButtonWrapper = styled.button<Omit<Props, 'children'>>`
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: filter 0.3s ease;
+
+    &:hover {
+        filter: brightness(80%);
+    }
 
     ${({ variant }) => {
         switch (variant) {
@@ -47,6 +52,9 @@ const CommonButtonWrapper = styled.button<Omit<Props, 'children'>>`
             case 'text':
                 return css`
                     color: var(--text-secondary);
+                    &:hover {
+                        color: var(--black);
+                    }
                 `
             case 'outline':
                 return css`
