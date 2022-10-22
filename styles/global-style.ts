@@ -66,12 +66,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
 
-  button[disabled],
-  html input[disabled] {
-    cursor: default;
-  }
-
-
 
   button::-moz-focus-inner,
   input::-moz-focus-inner {

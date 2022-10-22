@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 import Footer from './footer'
 import Header from './header'
-import { AppWrapper, MainField } from './style'
+import { AppWrapper, BodyField } from './style'
 
 interface Props {
     children: ReactNode
@@ -12,7 +12,7 @@ const App = ({ children }: Props) => {
     return (
         <AppWrapper>
             <Header />
-            <MainField>{children}</MainField>
+            <BodyField>{children}</BodyField>
             <Footer />
         </AppWrapper>
     )

@@ -1,5 +1,11 @@
+import { FooterContentField, FooterWrapper } from './style'
+
 const Footer = () => {
-    return <div>Footer</div>
+    return (
+        <FooterWrapper>
+            <FooterContentField>footer</FooterContentField>
+        </FooterWrapper>
+    )
 }
 
 export default Footer

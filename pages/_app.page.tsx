@@ -13,6 +13,8 @@ import App from 'pages/src/app'
 import { ReactElement, ReactNode, useRef } from 'react'
 import { RecoilRoot } from 'recoil'
 
+import { GlobalStyle } from '../styles/global-style'
+
 type NextPageWithLayout = NextPage & {
     getLayout?: (page: ReactElement) => ReactNode
 }
@@ -43,6 +45,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
             <QueryClientProvider client={queryClientRef.current}>
                 <Hydrate state={pageProps.dehydratedState}>
                     <RecoilRoot>
+                        <GlobalStyle />
                         {getLayout(<Component {...pageProps} />)}
                     </RecoilRoot>
                     <ReactQueryDevtools initialIsOpen={false} />

@@ -10,8 +10,11 @@ export const HeaderWrapper = styled.header`
     border-bottom: 1px solid var(--divider-main);
 `
 
-export const LogoImage = styled.div`
+export const LogoImage = styled.a`
+    display: flex;
+    align-items: center;
     width: 115px;
+    cursor: pointer;
 `
 
 export const HeaderMainField = styled.div`
@@ -23,6 +26,7 @@ export const HeaderMainField = styled.div`
 
 export const HeaderActionField = styled.div`
     display: flex;
+    gap: 10px;
 `
 
 export const InfoField = styled.div`
@@ -36,7 +40,7 @@ export const NavigationBox = styled.nav`
     gap: 28px;
 `
 
-export const NavigationLink = styled.a`
+export const NavLinkUnit = styled.div`
     ${Typography.text_sm}
     cursor: pointer;
     &:hover {
